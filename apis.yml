@@ -1,7 +1,31 @@
 aid: hicustomer
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hicustomer.png
 name: HiCustomer
-description: HiCustomer is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  HiCustomer (ハイカスタマー) was a Japanese Customer Success Management (CSM) SaaS
+  built specifically for SaaS companies. Its platform aggregated customer data
+  scattered across BI tools, CRMs, and chat tools to visualize product usage,
+  communication history, revenue, and contract information in one place. Teams
+  used configurable health-score rules to monitor account health across the
+  customer lifecycle, and custom alerts to surface churn and upsell signals at
+  the right moment, with time-series analysis to make customer-success outreach
+  repeatable. The company also offered customer-success consulting. As of this
+  enrichment pass the hicustomer.jp domain no longer resolves to a live site
+  (its authoritative AWS Route 53 zone is empty) and the product appears
+  discontinued; the last archived homepage (Oct 2024) shows only a minimal
+  "About the company" page. No public developer API, documentation, SDK, or
+  developer portal was ever published.
 url: https://raw.githubusercontent.com/api-evangelist/hicustomer/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +33,25 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-reason: >-
+  hicustomer.jp has no A/CNAME/MX/TXT records in its authoritative AWS Route 53
+  zone (probed 2026-07-20); site is dark. Product was a customer-success SaaS
+  (marketing site archived through 2021 with a login, /contact, /terms,
+  /privacy; company-about-only page by Oct 2024). No API surface.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Customer Success
+- Customer Success Management
+- SaaS
+- Health Score
+- Churn Prediction
+- Customer Data Platform
+- Analytics
+- Japan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +61,8 @@ maintainers:
 common:
 - type: Website
   url: https://hicustomer.jp
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
