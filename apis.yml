@@ -46,7 +46,7 @@ x-status-reason: >-
   status 000). Site is dark. The successor product "Arch by HiCustomer" was
   divested to Geniee, Inc. (TSE 6562) on 2024-09-13 and rebranded Geniee DSR.
   No API surface, ever.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-08-13'
 tags:
