@@ -23,25 +23,20 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hicustomer.png
 name: HiCustomer
-description: >-
-  HiCustomer (ハイカスタマー) was a Japanese Customer Success Management (CSM) SaaS
-  built specifically for SaaS companies. Its platform aggregated customer data
-  scattered across BI tools, CRMs, and chat tools to visualize product usage,
-  communication history, revenue, and contract information in one place. Teams
-  used configurable health-score rules to monitor account health across the
-  customer lifecycle, and custom alerts to surface churn and upsell signals at
-  the right moment, with time-series analysis to make customer-success outreach
-  repeatable. The company also offered customer-success consulting, and later
-  pivoted to a digital sales room product, "Arch by HiCustomer". On 2024-09-13
-  HiCustomer Inc. sold the Arch business to the Tokyo-listed adtech company
-  Geniee, Inc. (TSE 6562), which absorbed it into GENIEE SFA/CRM and rebranded
-  it Geniee DSR. As of this enrichment pass the hicustomer.jp domain no longer
-  resolves to a live site (its authoritative AWS Route 53 zone is delegated but
-  empty) and the product is discontinued; the last archived homepage (Oct 2024)
-  is a STUDIO-built single-page "About the company" placeholder. No public
-  developer API, documentation, SDK, or developer portal was ever published —
-  the Wayback record for hicustomer.jp contains no /api, /docs, /developers,
-  /pricing or /status path at any point in its history.
+description: HiCustomer (ハイカスタマー) was a Japanese Customer Success Management (CSM) SaaS built specifically
+  for SaaS companies. Its platform aggregated customer data scattered across BI tools, CRMs, and chat
+  tools to visualize product usage, communication history, revenue, and contract information in one place.
+  Teams used configurable health-score rules to monitor account health across the customer lifecycle,
+  and custom alerts to surface churn and upsell signals at the right moment, with time-series analysis
+  to make customer-success outreach repeatable. The company also offered customer-success consulting,
+  and later pivoted to a digital sales room product, "Arch by HiCustomer". On 2024-09-13 HiCustomer Inc.
+  sold the Arch business to the Tokyo-listed adtech company Geniee, Inc. (TSE 6562), which absorbed it
+  into GENIEE SFA/CRM and rebranded it Geniee DSR. As of this enrichment pass the hicustomer.jp domain
+  no longer resolves to a live site (its authoritative AWS Route 53 zone is delegated but empty) and the
+  product is discontinued; the last archived homepage (Oct 2024) is a STUDIO-built single-page "About
+  the company" placeholder. No public developer API, documentation, SDK, or developer portal was ever
+  published — the Wayback record for hicustomer.jp contains no /api, /docs, /developers, /pricing or /status
+  path at any point in its history.
 url: https://raw.githubusercontent.com/api-evangelist/hicustomer/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -50,16 +45,13 @@ x-backed-by:
 x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: defunct
-x-status-reason: >-
-  hicustomer.jp has no A/CNAME/MX/TXT records in its authoritative AWS Route 53
-  zone (re-probed 2026-08-13: NS delegated to ns-481/ns-1008/ns-1515/ns-1943
-  awsdns, WHOIS ACTIVE, zone empty; every HTTPS request returns curl exit 6 /
-  status 000). Site is dark. The successor product "Arch by HiCustomer" was
-  divested to Geniee, Inc. (TSE 6562) on 2024-09-13 and rebranded Geniee DSR.
-  No API surface, ever.
+x-status-reason: 'hicustomer.jp has no A/CNAME/MX/TXT records in its authoritative AWS Route 53 zone (re-probed
+  2026-08-13: NS delegated to ns-481/ns-1008/ns-1515/ns-1943 awsdns, WHOIS ACTIVE, zone empty; every HTTPS
+  request returns curl exit 6 / status 000). Site is dark. The successor product "Arch by HiCustomer"
+  was divested to Geniee, Inc. (TSE 6562) on 2024-09-13 and rebranded Geniee DSR. No API surface, ever.'
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-08-13'
+modified: '2026-09-15'
 tags:
 - Company
 - Customer Success
@@ -72,6 +64,7 @@ tags:
 - Japan
 - B2B SaaS
 - Digital Sales Room
+- Defunct
 tags_raw:
 - Company
 - Customer Success
@@ -101,12 +94,10 @@ x-enrichment:
 x-coverage:
   state: none
   reason: defunct
-  detail: >-
-    hicustomer.jp is a registered .jp domain delegated to AWS Route 53 with a
-    completely empty zone — no A, CNAME or MX answer for the apex or for any
-    api/docs/app subdomain — so every probe fails at DNS, and the company's last
-    remaining product, the "Arch by HiCustomer" digital sales room, was sold to
-    Geniee, Inc. on 2024-09-13 and now ships as Geniee DSR.
+  detail: hicustomer.jp is a registered .jp domain delegated to AWS Route 53 with a completely empty zone
+    — no A, CNAME or MX answer for the apex or for any api/docs/app subdomain — so every probe fails at
+    DNS, and the company's last remaining product, the "Arch by HiCustomer" digital sales room, was sold
+    to Geniee, Inc. on 2024-09-13 and now ships as Geniee DSR.
   evidence:
   - url: https://hicustomer.jp/
     status: 0
