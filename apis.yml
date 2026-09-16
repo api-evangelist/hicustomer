@@ -51,7 +51,7 @@ x-status-reason: 'hicustomer.jp has no A/CNAME/MX/TXT records in its authoritati
   was divested to Geniee, Inc. (TSE 6562) on 2024-09-13 and rebranded Geniee DSR. No API surface, ever.'
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-09-15'
+modified: '2026-09-16'
 tags:
 - Company
 - Customer Success
@@ -64,6 +64,7 @@ tags:
 - Japan
 - B2B SaaS
 - Digital Sales Room
+- Defunct
 tags_raw:
 - Company
 - Customer Success
@@ -76,6 +77,7 @@ tags_raw:
 - Japan
 - B2B SaaS
 - Digital Sales Room
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
